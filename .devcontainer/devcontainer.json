@@ -14,7 +14,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "uname -a",
+	"postCreateCommand": ".devcontainer/postcreate.sh",
 
 	// Configure tool-specific properties.
 	"customizations": {

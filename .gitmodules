@@ -17,3 +17,6 @@
 [submodule "marcos_fpga"]
 	path = marcos_fpga
 	url = https://github.com/vnegnev/marcos_fpga.git
+[submodule "MaRGE"]
+	path = MaRGE
+	url = https://github.com/josalggui/MaRGE

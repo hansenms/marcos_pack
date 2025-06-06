@@ -24,6 +24,18 @@ Enable Internet Connection Sharing (ICS) on Windows
 
 In WSL use "Mirrored" networking mode, otherwise, you will not have access to the additional interface from WSL. You can changed that in the "WSL Settings" app.
 
+If you have scaling on your monitors, the app may appear small. You can adjust the settings by adding a `.wslgconfig` in your users home:
+
+```
+[system-distro-env]
+;hi-dpi
+; WESTON_RDP_HI_DPI_SCALING=true
+; WESTON_RDP_FRACTIONAL_HI_DPI_SCALING=true
+;100 to 500
+; WESTON_RDP_DEBUG_DESKTOP_SCALING_FACTOR=100
+WESTON_RDP_FRACTIONAL_HI_DPI_SCALING_ROUNDUP=true
+```
+
 ## Serial Console Connection (optional)
 
 If you want to monitor the boot sequence and debug or set network configuration. Use the serial console. Follow [serial console instructions here](https://redpitaya.readthedocs.io/en/latest/developerGuide/software/console/console/console.html). 
